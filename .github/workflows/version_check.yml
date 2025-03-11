@@ -4,4 +4,7 @@ on: pull_request_target
 
 jobs:
   call-reusable-workflow:
-    uses: makotocchi/github-actions-test/.github/workflows/version_check.yml@main
+    uses: makotocchi/github-actions-test/.github/workflows/version_check_workflow.yml@main
+    permissions:
+      contents: read
+      pull-requests: write
