@@ -6,4 +6,7 @@ on:
 
 jobs:
   call-reusable-workflow:
-    uses: makotocchi/github-actions-test/.github/workflows/version_update.yml@main
+    uses: makotocchi/github-actions-test/.github/workflows/version_update_workflow.yml@main
+    permissions:
+      contents: write
+      pull-requests: write
