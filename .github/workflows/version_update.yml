@@ -1,0 +1,9 @@
+name: Version Update
+run-name: Version Update for "${{ github.event.issue.title }}"
+on: 
+  issue_comment:
+    types: [edited]
+
+jobs:
+  call-reusable-workflow:
+    uses: makotocchi/github-actions-test/.github/workflows/version_update.yml@main

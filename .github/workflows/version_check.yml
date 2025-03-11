@@ -1,0 +1,7 @@
+name: Version Check
+run-name: Version Check for "${{ github.event.pull_request.title }}"
+on: pull_request_target
+
+jobs:
+  call-reusable-workflow:
+    uses: makotocchi/github-actions-test/.github/workflows/version_check.yml@main
